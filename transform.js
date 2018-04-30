@@ -163,10 +163,6 @@ function createOutputImports(newImports, kind) {
   const blankLine = "//$$BLANK_LINE";
 
   function pushImports(keys) {
-    if (keys.length > 0) {
-      outputImports.push(blankLine);
-    }
-
     keys.forEach(key => {
       outputImports.push(
         createImportStatement(
